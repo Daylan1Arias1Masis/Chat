@@ -130,7 +130,7 @@ public class JPChat1 extends JPanel implements Runnable, ActionListener {
 
 		try {
 
-			ServerSocket servidorCliente = new ServerSocket(9090);
+			ServerSocket servidorCliente = new ServerSocket(9996);
 
 			Socket cliente;
 

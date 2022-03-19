@@ -100,7 +100,7 @@ public class JPChat2 extends JPanel implements Runnable, ActionListener {
 
 				try {
 	
-					Socket socket = new Socket("192.168.1.7", 9998);
+					Socket socket = new Socket("192.168.1.7", 9997);
 	
 					this.paquete = new Paquete(jtfNick.getText(), jtfIp.getText(), jtfTexto.getText());
 	
@@ -109,6 +109,7 @@ public class JPChat2 extends JPanel implements Runnable, ActionListener {
 					objectOutputStream.writeObject(this.paquete);
 	
 					socket.close();
+					
 	
 				} catch (UnknownHostException e1) {
 					e1.printStackTrace();
